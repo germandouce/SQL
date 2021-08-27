@@ -1,0 +1,22 @@
+Noramalizacion de Base de Datos
+FORMAS NORMALES:
+
+* 1era Forma normal: No repetir datos por tabla
+
+* 2da forma normal: Cada columna de la tabla debe depender de la clave principal de dicha tabla.
+Esto signfica no incorporar informacion no relacionada con el campo que es primary key
+
+* 3era forma normal: No puede haber datos derivados, es decir los datos de una tabla 1 que se 
+pueden buscar y obtener de otra tabla 2 y tienen mejor relacion con la clave principal de esta
+ultima (2), no deben incluirse en la primera tabla (tabla 1) sino en la segunda (tabla 2)
+
+CONSEJOS:
+*Es mejor tener mas tablas con pocos campos que pocas tablas y muchas columnas
+*Es mejor tener mas registros que mas columnas
+*Siempre priorizar claves de tipo de dato int que de tipo string
+*Usar valores default siempre que sea posible xq en caso contrario el sistema nos obliga a 
+infromar un valor aunque no lo tengamos. Siempre que se neceiste un valor obligatorio usar
+valores predeterminados. Esto es tambien mejora la velocidad ya que que el motor requiere 
+mas recursos xa colocar un valor vacio al momento de cargar el registro en cada campo al 
+no saber el dato a q tener uno por predeterminado.
+*
